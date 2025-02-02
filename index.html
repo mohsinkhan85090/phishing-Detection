@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection</title>
+</head>
+<body>
+    <h1>Phishing Detection</h1>
+    <form action="/predict" method="POST">
+        <label for="num_dots">Number of Dots:</label>
+        <input type="text" name="num_dots" id="num_dots"><br>
+        
+        <label for="url_length">URL Length:</label>
+        <input type="text" name="url_length" id="url_length"><br>
+        
+        <!-- Add inputs for other features here -->
+        
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+    <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
