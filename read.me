@@ -1,0 +1,47 @@
+# Phishing Detection Project
+
+## Overview
+This project aims to detect phishing websites using machine learning. It uses a dataset that contains different URL features to predict whether a website is legitimate or phishing.
+
+## Features
+- Model trained using Random Forest Classifier
+- Evaluation metrics include accuracy, precision, recall, and F1-score
+- Saved model for future predictions
+- Web interface using Flask (optional)
+
+## Setup Instructions
+
+1. Clone the repository:
+
+
+2. Navigate to the project folder:cd phishing-detection
+
+3. Create a virtual environment:python -m venv venv
+
+4. Activate the virtual environment:
+- On Windows:
+  ```
+  .\venv\Scripts\activate
+  ```
+
+5. Install dependencies:
+pip install -r requirements.txt
+
+6. Run the application:
+python app.py
+
+7. To use the Flask app (if applicable), run:
+python app.py
+
+## Files
+- `app.py`: Main script to train and evaluate the model.
+- `phishing_model.pkl`: Trained model saved for predictions.
+- `data/`: Folder containing dataset files.
+- `templates/index.html`: HTML for user input (Flask app).
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
+
+
+
+
